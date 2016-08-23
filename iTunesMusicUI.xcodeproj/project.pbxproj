@@ -9,14 +9,51 @@
 /* Begin PBXBuildFile section */
 		D96C26801D6C92E900298541 /* iTunesMusicUI.h in Headers */ = {isa = PBXBuildFile; fileRef = D96C267E1D6C92E900298541 /* iTunesMusicUI.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		D96C268B1D6C954200298541 /* HeaderLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D96C268A1D6C954200298541 /* HeaderLabel.swift */; };
+		D96C26931D6CA28C00298541 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D96C26921D6CA28C00298541 /* AppDelegate.swift */; };
+		D96C26951D6CA28C00298541 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D96C26941D6CA28C00298541 /* ViewController.swift */; };
+		D96C26981D6CA28C00298541 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D96C26961D6CA28C00298541 /* Main.storyboard */; };
+		D96C269A1D6CA28C00298541 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D96C26991D6CA28C00298541 /* Assets.xcassets */; };
+		D96C269D1D6CA28C00298541 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D96C269B1D6CA28C00298541 /* LaunchScreen.storyboard */; };
+		D96C26A21D6CA29900298541 /* iTunesMusicUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D96C267B1D6C92E900298541 /* iTunesMusicUI.framework */; };
+		D96C26A31D6CA29900298541 /* iTunesMusicUI.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = D96C267B1D6C92E900298541 /* iTunesMusicUI.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		D96C26A41D6CA29900298541 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D96C26721D6C92E900298541 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D96C267A1D6C92E900298541;
+			remoteInfo = iTunesMusicUI;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		D96C26A61D6CA29900298541 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				D96C26A31D6CA29900298541 /* iTunesMusicUI.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		D96C267B1D6C92E900298541 /* iTunesMusicUI.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = iTunesMusicUI.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D96C267E1D6C92E900298541 /* iTunesMusicUI.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = iTunesMusicUI.h; sourceTree = "<group>"; };
 		D96C267F1D6C92E900298541 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		D96C26881D6C94EB00298541 /* StyleGuide.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = StyleGuide.storyboard; sourceTree = "<group>"; };
 		D96C268A1D6C954200298541 /* HeaderLabel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HeaderLabel.swift; sourceTree = "<group>"; };
+		D96C26901D6CA28C00298541 /* Styleguide.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Styleguide.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		D96C26921D6CA28C00298541 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		D96C26941D6CA28C00298541 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		D96C26971D6CA28C00298541 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		D96C26991D6CA28C00298541 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		D96C269C1D6CA28C00298541 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		D96C269E1D6CA28C00298541 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -24,6 +61,14 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D96C268D1D6CA28C00298541 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D96C26A21D6CA29900298541 /* iTunesMusicUI.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -35,6 +80,7 @@
 			children = (
 				D96C26861D6C92F400298541 /* Sources */,
 				D96C267D1D6C92E900298541 /* iTunesMusicUI */,
+				D96C26911D6CA28C00298541 /* Styleguide */,
 				D96C267C1D6C92E900298541 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -43,6 +89,7 @@
 			isa = PBXGroup;
 			children = (
 				D96C267B1D6C92E900298541 /* iTunesMusicUI.framework */,
+				D96C26901D6CA28C00298541 /* Styleguide.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -52,7 +99,6 @@
 			children = (
 				D96C267E1D6C92E900298541 /* iTunesMusicUI.h */,
 				D96C267F1D6C92E900298541 /* Info.plist */,
-				D96C26881D6C94EB00298541 /* StyleGuide.storyboard */,
 			);
 			path = iTunesMusicUI;
 			sourceTree = "<group>";
@@ -71,6 +117,19 @@
 				D96C268A1D6C954200298541 /* HeaderLabel.swift */,
 			);
 			path = Label;
+			sourceTree = "<group>";
+		};
+		D96C26911D6CA28C00298541 /* Styleguide */ = {
+			isa = PBXGroup;
+			children = (
+				D96C26921D6CA28C00298541 /* AppDelegate.swift */,
+				D96C26941D6CA28C00298541 /* ViewController.swift */,
+				D96C26961D6CA28C00298541 /* Main.storyboard */,
+				D96C26991D6CA28C00298541 /* Assets.xcassets */,
+				D96C269B1D6CA28C00298541 /* LaunchScreen.storyboard */,
+				D96C269E1D6CA28C00298541 /* Info.plist */,
+			);
+			path = Styleguide;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -105,18 +164,42 @@
 			productReference = D96C267B1D6C92E900298541 /* iTunesMusicUI.framework */;
 			productType = "com.apple.product-type.framework";
 		};
+		D96C268F1D6CA28C00298541 /* Styleguide */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D96C269F1D6CA28C00298541 /* Build configuration list for PBXNativeTarget "Styleguide" */;
+			buildPhases = (
+				D96C268C1D6CA28C00298541 /* Sources */,
+				D96C268D1D6CA28C00298541 /* Frameworks */,
+				D96C268E1D6CA28C00298541 /* Resources */,
+				D96C26A61D6CA29900298541 /* Embed Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				D96C26A51D6CA29900298541 /* PBXTargetDependency */,
+			);
+			name = Styleguide;
+			productName = Styleguide;
+			productReference = D96C26901D6CA28C00298541 /* Styleguide.app */;
+			productType = "com.apple.product-type.application";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
 		D96C26721D6C92E900298541 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				LastSwiftUpdateCheck = 0800;
 				LastUpgradeCheck = 0800;
 				ORGANIZATIONNAME = jp.sora0077;
 				TargetAttributes = {
 					D96C267A1D6C92E900298541 = {
 						CreatedOnToolsVersion = 8.0;
 						LastSwiftMigration = 0800;
+						ProvisioningStyle = Automatic;
+					};
+					D96C268F1D6CA28C00298541 = {
+						CreatedOnToolsVersion = 8.0;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -127,6 +210,7 @@
 			hasScannedForEncodings = 0;
 			knownRegions = (
 				en,
+				Base,
 			);
 			mainGroup = D96C26711D6C92E900298541;
 			productRefGroup = D96C267C1D6C92E900298541 /* Products */;
@@ -134,6 +218,7 @@
 			projectRoot = "";
 			targets = (
 				D96C267A1D6C92E900298541 /* iTunesMusicUI */,
+				D96C268F1D6CA28C00298541 /* Styleguide */,
 			);
 		};
 /* End PBXProject section */
@@ -143,6 +228,16 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D96C268E1D6CA28C00298541 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D96C269D1D6CA28C00298541 /* LaunchScreen.storyboard in Resources */,
+				D96C269A1D6CA28C00298541 /* Assets.xcassets in Resources */,
+				D96C26981D6CA28C00298541 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -157,7 +252,43 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		D96C268C1D6CA28C00298541 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D96C26951D6CA28C00298541 /* ViewController.swift in Sources */,
+				D96C26931D6CA28C00298541 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		D96C26A51D6CA29900298541 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D96C267A1D6C92E900298541 /* iTunesMusicUI */;
+			targetProxy = D96C26A41D6CA29900298541 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		D96C26961D6CA28C00298541 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D96C26971D6CA28C00298541 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		D96C269B1D6CA28C00298541 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D96C269C1D6CA28C00298541 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		D96C26811D6C92E900298541 /* Debug */ = {
@@ -298,6 +429,32 @@
 			};
 			name = Release;
 		};
+		D96C26A01D6CA28C00298541 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = Styleguide/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = jp.sora0077.Styleguide;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		D96C26A11D6CA28C00298541 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = Styleguide/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = jp.sora0077.Styleguide;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -315,6 +472,14 @@
 			buildConfigurations = (
 				D96C26841D6C92E900298541 /* Debug */,
 				D96C26851D6C92E900298541 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		D96C269F1D6CA28C00298541 /* Build configuration list for PBXNativeTarget "Styleguide" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D96C26A01D6CA28C00298541 /* Debug */,
+				D96C26A11D6CA28C00298541 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 		};

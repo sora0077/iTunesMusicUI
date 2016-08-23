@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11198.2" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="0Iu-eJ-SoU">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Header-->
+        <scene sceneID="i08-Ej-YVY">
+            <objects>
+                <viewController id="ERk-wU-wbJ" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="mp9-Ve-Det"/>
+                        <viewControllerLayoutGuide type="bottom" id="OaT-iS-IYL"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="1VP-ey-gT4">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Eeg-jB-rRA" customClass="Header2Label" customModule="iTunesMusicUI">
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sQA-TZ-je1" customClass="Header3Label" customModule="iTunesMusicUI">
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9ou-Yp-Owa" customClass="Header4Label" customModule="iTunesMusicUI">
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ct1-2K-AbM" customClass="Header5Label" customModule="iTunesMusicUI">
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Header1" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0hW-Zg-LH8" customClass="Header1Label" customModule="iTunesMusicUI">
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="headingColor">
+                                        <color key="value" red="1" green="0.010358865159999999" blue="0.48951218600000002" alpha="1" colorSpace="calibratedRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="0hW-Zg-LH8" firstAttribute="top" secondItem="mp9-Ve-Det" secondAttribute="bottom" constant="8" id="049-UQ-t9n"/>
+                            <constraint firstItem="Eeg-jB-rRA" firstAttribute="leading" secondItem="1VP-ey-gT4" secondAttribute="leadingMargin" id="3tE-IV-Ea0"/>
+                            <constraint firstItem="Ct1-2K-AbM" firstAttribute="leading" secondItem="1VP-ey-gT4" secondAttribute="leadingMargin" id="8EI-cL-s8c"/>
+                            <constraint firstItem="sQA-TZ-je1" firstAttribute="leading" secondItem="1VP-ey-gT4" secondAttribute="leadingMargin" id="Jx9-nt-INl"/>
+                            <constraint firstItem="sQA-TZ-je1" firstAttribute="top" secondItem="Eeg-jB-rRA" secondAttribute="bottom" constant="20" id="KC4-vm-bnY"/>
+                            <constraint firstItem="0hW-Zg-LH8" firstAttribute="trailing" secondItem="1VP-ey-gT4" secondAttribute="trailingMargin" id="L7d-PJ-HmI"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="Eeg-jB-rRA" secondAttribute="trailing" id="QLg-y8-xe7"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="9ou-Yp-Owa" secondAttribute="trailing" id="eI8-pe-OvD"/>
+                            <constraint firstItem="0hW-Zg-LH8" firstAttribute="leading" secondItem="1VP-ey-gT4" secondAttribute="leadingMargin" id="fnr-Mx-5Gy"/>
+                            <constraint firstItem="Ct1-2K-AbM" firstAttribute="top" secondItem="9ou-Yp-Owa" secondAttribute="bottom" constant="20" id="fs7-gX-oRN"/>
+                            <constraint firstItem="9ou-Yp-Owa" firstAttribute="top" secondItem="sQA-TZ-je1" secondAttribute="bottom" constant="20" id="fyi-ax-fp7"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="sQA-TZ-je1" secondAttribute="trailing" id="hY8-BN-89G"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="Ct1-2K-AbM" secondAttribute="trailing" id="nCM-a1-7Vc"/>
+                            <constraint firstItem="9ou-Yp-Owa" firstAttribute="leading" secondItem="1VP-ey-gT4" secondAttribute="leadingMargin" id="q7U-5A-uqF"/>
+                            <constraint firstItem="Eeg-jB-rRA" firstAttribute="top" secondItem="0hW-Zg-LH8" secondAttribute="bottom" constant="20" id="z9S-XB-CF4"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="Header" id="5PQ-lF-gma"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="bnf-rU-aYk" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1916" y="-326"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="J6d-8Z-707">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="0Iu-eJ-SoU" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="P85-MX-ETr">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="ERk-wU-wbJ" kind="relationship" relationship="rootViewController" id="9sU-Mb-bm8"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="7zb-iF-nyz" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="984.79999999999995" y="-188.45577211394306"/>
+        </scene>
+    </scenes>
+</document>
