@@ -3,6 +3,7 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -215,43 +216,128 @@
                         <sections>
                             <tableViewSection id="t90-Bd-wEw">
                                 <cells>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" rowHeight="150" id="gs1-EG-zh9">
-                                        <rect key="frame" x="0.0" y="64" width="375" height="150"/>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" rowHeight="196" id="gs1-EG-zh9">
+                                        <rect key="frame" x="0.0" y="64" width="375" height="196"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="gs1-EG-zh9" id="0YW-m1-pPP">
-                                            <frame key="frameInset" width="375" height="150"/>
+                                            <frame key="frameInset" width="375" height="196"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="cbL-oc-oUs" customClass="LayerView" customModule="iTunesMusicUI">
                                                     <subviews>
-                                                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="N1v-7r-0zx" customClass="LayerView" customModule="iTunesMusicUI">
+                                                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Fyz-jU-6dQ">
                                                             <subviews>
-                                                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="8ys-h9-e68">
+                                                                <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="N1v-7r-0zx" customClass="LayerView" customModule="iTunesMusicUI">
+                                                                    <subviews>
+                                                                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="8ys-h9-e68">
+                                                                            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                                            <constraints>
+                                                                                <constraint firstAttribute="height" constant="8" id="S10-r9-VKB"/>
+                                                                            </constraints>
+                                                                        </view>
+                                                                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="p7o-En-OXp">
+                                                                            <color key="backgroundColor" red="0.19215686269999999" green="0.56078431370000004" blue="0.84705882349999995" alpha="1" colorSpace="calibratedRGB"/>
+                                                                            <constraints>
+                                                                                <constraint firstAttribute="width" constant="6" id="NPd-Z4-I3T"/>
+                                                                            </constraints>
+                                                                        </view>
+                                                                        <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="OH3-OD-WVX" customClass="LayerView" customModule="iTunesMusicUI">
+                                                                            <subviews>
+                                                                                <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleAspectFit" image="a001" translatesAutoresizingMaskIntoConstraints="NO" id="ohj-ze-COx"/>
+                                                                            </subviews>
+                                                                            <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                                                            <constraints>
+                                                                                <constraint firstItem="ohj-ze-COx" firstAttribute="leading" secondItem="OH3-OD-WVX" secondAttribute="leading" id="5C2-qc-ULc"/>
+                                                                                <constraint firstItem="ohj-ze-COx" firstAttribute="top" secondItem="OH3-OD-WVX" secondAttribute="top" id="MJv-tQ-VmU"/>
+                                                                                <constraint firstAttribute="bottom" secondItem="ohj-ze-COx" secondAttribute="bottom" id="gM4-dP-Z7N"/>
+                                                                                <constraint firstAttribute="trailing" secondItem="ohj-ze-COx" secondAttribute="trailing" id="o9B-EW-Iaj"/>
+                                                                                <constraint firstAttribute="width" secondItem="OH3-OD-WVX" secondAttribute="height" multiplier="1:1" id="sPL-0v-cFP"/>
+                                                                            </constraints>
+                                                                            <userDefinedRuntimeAttributes>
+                                                                                <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                                                    <real key="value" value="4"/>
+                                                                                </userDefinedRuntimeAttribute>
+                                                                            </userDefinedRuntimeAttributes>
+                                                                        </view>
+                                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NHT-Kv-7cG">
+                                                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                                            <nil key="textColor"/>
+                                                                            <nil key="highlightedColor"/>
+                                                                        </label>
+                                                                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="eCU-c6-emQ" customClass="LayerView" customModule="iTunesMusicUI">
+                                                                            <subviews>
+                                                                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="HaZ-nZ-eb5" customClass="LayerView" customModule="iTunesMusicUI">
+                                                                                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                                                    <constraints>
+                                                                                        <constraint firstAttribute="width" secondItem="HaZ-nZ-eb5" secondAttribute="height" multiplier="1:1" id="SW8-bQ-gdL"/>
+                                                                                        <constraint firstAttribute="width" constant="12" id="gKF-iu-jGr"/>
+                                                                                    </constraints>
+                                                                                    <userDefinedRuntimeAttributes>
+                                                                                        <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                                                            <real key="value" value="6"/>
+                                                                                        </userDefinedRuntimeAttribute>
+                                                                                    </userDefinedRuntimeAttributes>
+                                                                                </view>
+                                                                            </subviews>
+                                                                            <color key="backgroundColor" red="0.19215686269999999" green="0.56078431370000004" blue="0.84705882349999995" alpha="1" colorSpace="calibratedRGB"/>
+                                                                            <constraints>
+                                                                                <constraint firstItem="HaZ-nZ-eb5" firstAttribute="centerY" secondItem="eCU-c6-emQ" secondAttribute="centerY" id="1lz-xu-0cp"/>
+                                                                                <constraint firstItem="HaZ-nZ-eb5" firstAttribute="centerX" secondItem="eCU-c6-emQ" secondAttribute="centerX" id="5Tn-JW-kW3"/>
+                                                                                <constraint firstAttribute="width" secondItem="eCU-c6-emQ" secondAttribute="height" multiplier="1:1" id="6fb-0L-MMA"/>
+                                                                                <constraint firstAttribute="width" constant="16" id="rGq-m9-qPc"/>
+                                                                            </constraints>
+                                                                            <userDefinedRuntimeAttributes>
+                                                                                <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                                                    <real key="value" value="8"/>
+                                                                                </userDefinedRuntimeAttribute>
+                                                                            </userDefinedRuntimeAttributes>
+                                                                        </view>
+                                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NRp-9k-32m">
+                                                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                                            <nil key="textColor"/>
+                                                                            <nil key="highlightedColor"/>
+                                                                        </label>
+                                                                    </subviews>
                                                                     <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                                     <constraints>
-                                                                        <constraint firstAttribute="height" constant="30" id="S10-r9-VKB"/>
+                                                                        <constraint firstItem="eCU-c6-emQ" firstAttribute="centerX" secondItem="p7o-En-OXp" secondAttribute="centerX" id="0hW-hN-Ydh"/>
+                                                                        <constraint firstItem="OH3-OD-WVX" firstAttribute="leading" secondItem="N1v-7r-0zx" secondAttribute="leading" constant="8" id="7fU-wb-wcW"/>
+                                                                        <constraint firstItem="OH3-OD-WVX" firstAttribute="top" secondItem="N1v-7r-0zx" secondAttribute="top" constant="8" id="8l5-z0-gF5"/>
+                                                                        <constraint firstAttribute="bottom" secondItem="p7o-En-OXp" secondAttribute="bottom" id="Cmy-z1-RGD"/>
+                                                                        <constraint firstItem="p7o-En-OXp" firstAttribute="leading" secondItem="N1v-7r-0zx" secondAttribute="leading" constant="20" id="Dza-GV-rYE"/>
+                                                                        <constraint firstItem="p7o-En-OXp" firstAttribute="top" secondItem="OH3-OD-WVX" secondAttribute="bottom" id="FD7-i2-s3l"/>
+                                                                        <constraint firstItem="8ys-h9-e68" firstAttribute="leading" secondItem="N1v-7r-0zx" secondAttribute="leading" id="ImE-gP-UMt"/>
+                                                                        <constraint firstItem="NRp-9k-32m" firstAttribute="centerY" secondItem="eCU-c6-emQ" secondAttribute="centerY" id="RBf-Ue-WZW"/>
+                                                                        <constraint firstAttribute="bottom" secondItem="eCU-c6-emQ" secondAttribute="bottom" constant="15" id="ZVM-zI-HJM"/>
+                                                                        <constraint firstItem="NHT-Kv-7cG" firstAttribute="centerY" secondItem="OH3-OD-WVX" secondAttribute="centerY" id="aEg-qf-2gB"/>
+                                                                        <constraint firstItem="NHT-Kv-7cG" firstAttribute="leading" secondItem="OH3-OD-WVX" secondAttribute="trailing" constant="8" id="lG7-od-zbu"/>
+                                                                        <constraint firstItem="NRp-9k-32m" firstAttribute="leading" secondItem="eCU-c6-emQ" secondAttribute="trailing" constant="8" id="qKp-A8-xqA"/>
+                                                                        <constraint firstAttribute="bottom" secondItem="OH3-OD-WVX" secondAttribute="bottom" constant="60" id="rJe-be-Mzi"/>
+                                                                        <constraint firstAttribute="bottom" secondItem="8ys-h9-e68" secondAttribute="bottom" id="woU-Gm-8fu"/>
+                                                                        <constraint firstAttribute="trailing" secondItem="8ys-h9-e68" secondAttribute="trailing" id="xua-a3-Xic"/>
                                                                     </constraints>
+                                                                    <userDefinedRuntimeAttributes>
+                                                                        <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                                            <real key="value" value="4"/>
+                                                                        </userDefinedRuntimeAttribute>
+                                                                    </userDefinedRuntimeAttributes>
                                                                 </view>
                                                             </subviews>
-                                                            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                                             <constraints>
-                                                                <constraint firstItem="8ys-h9-e68" firstAttribute="leading" secondItem="N1v-7r-0zx" secondAttribute="leading" id="ImE-gP-UMt"/>
-                                                                <constraint firstAttribute="bottom" secondItem="8ys-h9-e68" secondAttribute="bottom" id="woU-Gm-8fu"/>
-                                                                <constraint firstAttribute="trailing" secondItem="8ys-h9-e68" secondAttribute="trailing" id="xua-a3-Xic"/>
+                                                                <constraint firstItem="N1v-7r-0zx" firstAttribute="leading" secondItem="Fyz-jU-6dQ" secondAttribute="leading" id="OON-KS-7xt"/>
+                                                                <constraint firstAttribute="trailing" secondItem="N1v-7r-0zx" secondAttribute="trailing" id="QqI-46-oK5"/>
+                                                                <constraint firstAttribute="bottom" secondItem="N1v-7r-0zx" secondAttribute="bottom" id="jc8-zY-aRv"/>
+                                                                <constraint firstItem="N1v-7r-0zx" firstAttribute="top" secondItem="Fyz-jU-6dQ" secondAttribute="top" id="rkw-IB-y5O"/>
                                                             </constraints>
-                                                            <userDefinedRuntimeAttributes>
-                                                                <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
-                                                                    <real key="value" value="4"/>
-                                                                </userDefinedRuntimeAttribute>
-                                                            </userDefinedRuntimeAttributes>
                                                         </view>
                                                     </subviews>
                                                     <color key="backgroundColor" red="0.94509803920000002" green="0.94509803920000002" blue="0.94509803920000002" alpha="1" colorSpace="calibratedRGB"/>
                                                     <constraints>
-                                                        <constraint firstItem="N1v-7r-0zx" firstAttribute="leading" secondItem="cbL-oc-oUs" secondAttribute="leading" id="ChB-w7-thx"/>
-                                                        <constraint firstAttribute="bottom" secondItem="N1v-7r-0zx" secondAttribute="bottom" constant="10" id="huD-9X-8Uh"/>
-                                                        <constraint firstItem="N1v-7r-0zx" firstAttribute="top" secondItem="cbL-oc-oUs" secondAttribute="top" id="oRU-NW-9tq"/>
-                                                        <constraint firstAttribute="trailing" secondItem="N1v-7r-0zx" secondAttribute="trailing" id="twl-EI-s7z"/>
+                                                        <constraint firstAttribute="trailing" secondItem="Fyz-jU-6dQ" secondAttribute="trailing" id="EsL-Pp-5Zc"/>
+                                                        <constraint firstItem="Fyz-jU-6dQ" firstAttribute="leading" secondItem="cbL-oc-oUs" secondAttribute="leading" id="TW1-TC-hFK"/>
+                                                        <constraint firstAttribute="bottom" secondItem="Fyz-jU-6dQ" secondAttribute="bottom" constant="10" id="UIn-CO-ipf"/>
+                                                        <constraint firstItem="Fyz-jU-6dQ" firstAttribute="top" secondItem="cbL-oc-oUs" secondAttribute="top" id="UU5-E1-gSX"/>
                                                     </constraints>
                                                     <userDefinedRuntimeAttributes>
                                                         <userDefinedRuntimeAttribute type="color" keyPath="shadowColor">
@@ -273,19 +359,19 @@
                                                 </view>
                                             </subviews>
                                             <constraints>
-                                                <constraint firstItem="cbL-oc-oUs" firstAttribute="leading" secondItem="0YW-m1-pPP" secondAttribute="leading" constant="8" id="KqF-ca-hdJ"/>
+                                                <constraint firstItem="cbL-oc-oUs" firstAttribute="leading" secondItem="0YW-m1-pPP" secondAttribute="leading" constant="12" id="KqF-ca-hdJ"/>
                                                 <constraint firstItem="cbL-oc-oUs" firstAttribute="top" secondItem="0YW-m1-pPP" secondAttribute="top" constant="12" id="T3p-zj-CZ7"/>
                                                 <constraint firstAttribute="bottom" secondItem="cbL-oc-oUs" secondAttribute="bottom" constant="-10" id="hZd-An-mnp"/>
-                                                <constraint firstAttribute="trailing" secondItem="cbL-oc-oUs" secondAttribute="trailing" constant="8" id="lh1-CB-Eov"/>
+                                                <constraint firstAttribute="trailing" secondItem="cbL-oc-oUs" secondAttribute="trailing" constant="12" id="lh1-CB-Eov"/>
                                             </constraints>
                                         </tableViewCellContentView>
                                         <color key="backgroundColor" red="0.94509803920000002" green="0.94509803920000002" blue="0.94509803920000002" alpha="1" colorSpace="calibratedRGB"/>
                                     </tableViewCell>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" id="rFx-xV-hPi">
-                                        <rect key="frame" x="0.0" y="214" width="375" height="88"/>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" rowHeight="58" id="rFx-xV-hPi">
+                                        <rect key="frame" x="0.0" y="260" width="375" height="58"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="rFx-xV-hPi" id="EM9-aV-EXR">
-                                            <frame key="frameInset" width="375" height="88"/>
+                                            <frame key="frameInset" width="375" height="58"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="26A-Hl-M7a" customClass="LayerView" customModule="iTunesMusicUI">
@@ -295,15 +381,61 @@
                                                                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="h9T-5g-ZyI">
                                                                     <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                                     <constraints>
-                                                                        <constraint firstAttribute="height" constant="30" id="OUo-IZ-Xzy"/>
+                                                                        <constraint firstAttribute="height" constant="8" id="OUo-IZ-Xzy"/>
                                                                     </constraints>
                                                                 </view>
+                                                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Scv-7w-oXs">
+                                                                    <color key="backgroundColor" red="0.19215686269999999" green="0.56078431370000004" blue="0.84705882349999995" alpha="1" colorSpace="calibratedRGB"/>
+                                                                    <constraints>
+                                                                        <constraint firstAttribute="width" constant="6" id="0A2-q0-tCV"/>
+                                                                    </constraints>
+                                                                </view>
+                                                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Owa-Mj-KH5" customClass="LayerView" customModule="iTunesMusicUI">
+                                                                    <subviews>
+                                                                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="69O-MP-ni6" customClass="LayerView" customModule="iTunesMusicUI">
+                                                                            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                                            <constraints>
+                                                                                <constraint firstAttribute="width" secondItem="69O-MP-ni6" secondAttribute="height" multiplier="1:1" id="dIx-eY-8RG"/>
+                                                                                <constraint firstAttribute="width" constant="12" id="pli-to-Fuo"/>
+                                                                            </constraints>
+                                                                            <userDefinedRuntimeAttributes>
+                                                                                <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                                                    <real key="value" value="6"/>
+                                                                                </userDefinedRuntimeAttribute>
+                                                                            </userDefinedRuntimeAttributes>
+                                                                        </view>
+                                                                    </subviews>
+                                                                    <color key="backgroundColor" red="0.19215686269999999" green="0.56078431370000004" blue="0.84705882349999995" alpha="1" colorSpace="calibratedRGB"/>
+                                                                    <constraints>
+                                                                        <constraint firstAttribute="width" constant="16" id="7cl-8E-Tjv"/>
+                                                                        <constraint firstItem="69O-MP-ni6" firstAttribute="centerX" secondItem="Owa-Mj-KH5" secondAttribute="centerX" id="g0c-tj-2hk"/>
+                                                                        <constraint firstItem="69O-MP-ni6" firstAttribute="centerY" secondItem="Owa-Mj-KH5" secondAttribute="centerY" id="gMG-rq-IQn"/>
+                                                                        <constraint firstAttribute="width" secondItem="Owa-Mj-KH5" secondAttribute="height" multiplier="1:1" id="qpn-jD-n3W"/>
+                                                                    </constraints>
+                                                                    <userDefinedRuntimeAttributes>
+                                                                        <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                                            <real key="value" value="8"/>
+                                                                        </userDefinedRuntimeAttribute>
+                                                                    </userDefinedRuntimeAttributes>
+                                                                </view>
+                                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="u0a-Bk-pGj">
+                                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                                    <nil key="textColor"/>
+                                                                    <nil key="highlightedColor"/>
+                                                                </label>
                                                             </subviews>
                                                             <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                             <constraints>
                                                                 <constraint firstItem="h9T-5g-ZyI" firstAttribute="top" secondItem="Dbb-o6-DsP" secondAttribute="top" id="63i-wu-hwb"/>
+                                                                <constraint firstAttribute="bottom" secondItem="Scv-7w-oXs" secondAttribute="bottom" id="941-OY-H4e"/>
+                                                                <constraint firstItem="Scv-7w-oXs" firstAttribute="centerX" secondItem="Owa-Mj-KH5" secondAttribute="centerX" id="9Yv-B9-lTN"/>
                                                                 <constraint firstAttribute="trailing" secondItem="h9T-5g-ZyI" secondAttribute="trailing" id="FEo-Sa-CEz"/>
                                                                 <constraint firstItem="h9T-5g-ZyI" firstAttribute="leading" secondItem="Dbb-o6-DsP" secondAttribute="leading" id="SJU-Yr-mXO"/>
+                                                                <constraint firstItem="Scv-7w-oXs" firstAttribute="leading" secondItem="Dbb-o6-DsP" secondAttribute="leading" constant="20" id="TVY-iz-yka"/>
+                                                                <constraint firstItem="u0a-Bk-pGj" firstAttribute="leading" secondItem="Owa-Mj-KH5" secondAttribute="trailing" constant="8" id="fJC-7r-AwV"/>
+                                                                <constraint firstItem="u0a-Bk-pGj" firstAttribute="centerY" secondItem="Dbb-o6-DsP" secondAttribute="centerY" id="h2h-MA-jIa"/>
+                                                                <constraint firstItem="Scv-7w-oXs" firstAttribute="top" secondItem="Dbb-o6-DsP" secondAttribute="top" id="jOI-VG-Q5C"/>
+                                                                <constraint firstItem="Scv-7w-oXs" firstAttribute="centerY" secondItem="Owa-Mj-KH5" secondAttribute="centerY" id="ySI-FH-Lsk"/>
                                                             </constraints>
                                                             <userDefinedRuntimeAttributes>
                                                                 <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
@@ -339,8 +471,8 @@
                                                 </view>
                                             </subviews>
                                             <constraints>
-                                                <constraint firstItem="26A-Hl-M7a" firstAttribute="leading" secondItem="EM9-aV-EXR" secondAttribute="leading" constant="8" id="c6m-41-8Jn"/>
-                                                <constraint firstAttribute="trailing" secondItem="26A-Hl-M7a" secondAttribute="trailing" constant="8" id="chg-Uj-yFe"/>
+                                                <constraint firstItem="26A-Hl-M7a" firstAttribute="leading" secondItem="EM9-aV-EXR" secondAttribute="leading" constant="12" id="c6m-41-8Jn"/>
+                                                <constraint firstAttribute="trailing" secondItem="26A-Hl-M7a" secondAttribute="trailing" constant="12" id="chg-Uj-yFe"/>
                                                 <constraint firstAttribute="bottom" secondItem="26A-Hl-M7a" secondAttribute="bottom" constant="12" id="nJK-TV-TkL"/>
                                                 <constraint firstItem="26A-Hl-M7a" firstAttribute="top" secondItem="EM9-aV-EXR" secondAttribute="top" constant="-10" id="p7f-pU-zBs"/>
                                             </constraints>
@@ -348,7 +480,7 @@
                                         <color key="backgroundColor" red="0.94509803920000002" green="0.94509803920000002" blue="0.94509803920000002" alpha="1" colorSpace="calibratedRGB"/>
                                     </tableViewCell>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" rowHeight="150" id="Gng-7h-fd5">
-                                        <rect key="frame" x="0.0" y="302" width="375" height="150"/>
+                                        <rect key="frame" x="0.0" y="318" width="375" height="150"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="Gng-7h-fd5" id="18s-b0-hbP">
                                             <frame key="frameInset" width="375" height="150"/>
@@ -392,16 +524,16 @@
                                                 </view>
                                             </subviews>
                                             <constraints>
-                                                <constraint firstAttribute="trailing" secondItem="Oil-Br-0sR" secondAttribute="trailing" constant="8" id="NiE-Fj-rTr"/>
+                                                <constraint firstAttribute="trailing" secondItem="Oil-Br-0sR" secondAttribute="trailing" constant="12" id="NiE-Fj-rTr"/>
                                                 <constraint firstItem="Oil-Br-0sR" firstAttribute="top" secondItem="18s-b0-hbP" secondAttribute="top" constant="12" id="TDo-j6-0tA"/>
-                                                <constraint firstItem="Oil-Br-0sR" firstAttribute="leading" secondItem="18s-b0-hbP" secondAttribute="leading" constant="8" id="fBc-QQ-OA6"/>
+                                                <constraint firstItem="Oil-Br-0sR" firstAttribute="leading" secondItem="18s-b0-hbP" secondAttribute="leading" constant="12" id="fBc-QQ-OA6"/>
                                                 <constraint firstAttribute="bottom" secondItem="Oil-Br-0sR" secondAttribute="bottom" constant="12" id="mmr-aV-RDz"/>
                                             </constraints>
                                         </tableViewCellContentView>
                                         <color key="backgroundColor" red="0.94509803920000002" green="0.94509803920000002" blue="0.94509803920000002" alpha="1" colorSpace="calibratedRGB"/>
                                     </tableViewCell>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" rowHeight="150" id="eka-r7-cI5">
-                                        <rect key="frame" x="0.0" y="452" width="375" height="150"/>
+                                        <rect key="frame" x="0.0" y="468" width="375" height="150"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="eka-r7-cI5" id="o6f-zK-AM2">
                                             <frame key="frameInset" width="375" height="150"/>
@@ -467,7 +599,7 @@
                                         <color key="backgroundColor" red="0.94509803920000002" green="0.94509803920000002" blue="0.94509803920000002" alpha="1" colorSpace="calibratedRGB"/>
                                     </tableViewCell>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" rowHeight="150" id="L2A-h8-Uad">
-                                        <rect key="frame" x="0.0" y="602" width="375" height="150"/>
+                                        <rect key="frame" x="0.0" y="618" width="375" height="150"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="L2A-h8-Uad" id="mk5-fX-4cc">
                                             <frame key="frameInset" width="375" height="150"/>
@@ -520,7 +652,7 @@
                                         <color key="backgroundColor" red="0.94509803920000002" green="0.94509803920000002" blue="0.94509803920000002" alpha="1" colorSpace="calibratedRGB"/>
                                     </tableViewCell>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" id="Hss-02-qA2">
-                                        <rect key="frame" x="0.0" y="752" width="375" height="88"/>
+                                        <rect key="frame" x="0.0" y="768" width="375" height="88"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="Hss-02-qA2" id="xZf-y3-GdL">
                                             <frame key="frameInset" width="375" height="88"/>
@@ -599,4 +731,7 @@
             <point key="canvasLocation" x="2317.5999999999999" y="984.55772113943033"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="a001" width="600" height="600"/>
+    </resources>
 </document>
