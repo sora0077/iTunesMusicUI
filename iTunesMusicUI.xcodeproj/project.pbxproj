@@ -16,6 +16,9 @@
 		D96C269D1D6CA28C00298541 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D96C269B1D6CA28C00298541 /* LaunchScreen.storyboard */; };
 		D96C26A21D6CA29900298541 /* iTunesMusicUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D96C267B1D6C92E900298541 /* iTunesMusicUI.framework */; };
 		D96C26A31D6CA29900298541 /* iTunesMusicUI.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = D96C267B1D6C92E900298541 /* iTunesMusicUI.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		D96C26A81D6DFD2500298541 /* NormalLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D96C26A71D6DFD2500298541 /* NormalLabel.swift */; };
+		D96C26AB1D6DFE8400298541 /* CancelButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = D96C26AA1D6DFE8400298541 /* CancelButton.swift */; };
+		D9DA7B021D7587F6008156BB /* LayerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9DA7B011D7587F6008156BB /* LayerView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -54,6 +57,9 @@
 		D96C26991D6CA28C00298541 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D96C269C1D6CA28C00298541 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		D96C269E1D6CA28C00298541 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D96C26A71D6DFD2500298541 /* NormalLabel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NormalLabel.swift; sourceTree = "<group>"; };
+		D96C26AA1D6DFE8400298541 /* CancelButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CancelButton.swift; sourceTree = "<group>"; };
+		D9DA7B011D7587F6008156BB /* LayerView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LayerView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -106,7 +112,9 @@
 		D96C26861D6C92F400298541 /* Sources */ = {
 			isa = PBXGroup;
 			children = (
+				D96C26A91D6DFE5800298541 /* Button */,
 				D96C26871D6C931200298541 /* Label */,
+				D9DA7B011D7587F6008156BB /* LayerView.swift */,
 			);
 			path = Sources;
 			sourceTree = "<group>";
@@ -115,6 +123,7 @@
 			isa = PBXGroup;
 			children = (
 				D96C268A1D6C954200298541 /* HeaderLabel.swift */,
+				D96C26A71D6DFD2500298541 /* NormalLabel.swift */,
 			);
 			path = Label;
 			sourceTree = "<group>";
@@ -130,6 +139,14 @@
 				D96C269E1D6CA28C00298541 /* Info.plist */,
 			);
 			path = Styleguide;
+			sourceTree = "<group>";
+		};
+		D96C26A91D6DFE5800298541 /* Button */ = {
+			isa = PBXGroup;
+			children = (
+				D96C26AA1D6DFE8400298541 /* CancelButton.swift */,
+			);
+			path = Button;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -250,6 +267,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				D96C268B1D6C954200298541 /* HeaderLabel.swift in Sources */,
+				D96C26A81D6DFD2500298541 /* NormalLabel.swift in Sources */,
+				D9DA7B021D7587F6008156BB /* LayerView.swift in Sources */,
+				D96C26AB1D6DFE8400298541 /* CancelButton.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -477,6 +497,7 @@
 				D96C26851D6C92E900298541 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		D96C269F1D6CA28C00298541 /* Build configuration list for PBXNativeTarget "Styleguide" */ = {
 			isa = XCConfigurationList;
@@ -485,6 +506,7 @@
 				D96C26A11D6CA28C00298541 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
