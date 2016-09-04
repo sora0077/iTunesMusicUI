@@ -18,6 +18,7 @@
 		D96C26A31D6CA29900298541 /* iTunesMusicUI.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = D96C267B1D6C92E900298541 /* iTunesMusicUI.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		D96C26A81D6DFD2500298541 /* NormalLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D96C26A71D6DFD2500298541 /* NormalLabel.swift */; };
 		D96C26AB1D6DFE8400298541 /* CancelButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = D96C26AA1D6DFE8400298541 /* CancelButton.swift */; };
+		D97716651D7BF04800547FD4 /* Color.swift in Sources */ = {isa = PBXBuildFile; fileRef = D97716641D7BF04800547FD4 /* Color.swift */; };
 		D9DA7B021D7587F6008156BB /* LayerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9DA7B011D7587F6008156BB /* LayerView.swift */; };
 /* End PBXBuildFile section */
 
@@ -59,6 +60,7 @@
 		D96C269E1D6CA28C00298541 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D96C26A71D6DFD2500298541 /* NormalLabel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NormalLabel.swift; sourceTree = "<group>"; };
 		D96C26AA1D6DFE8400298541 /* CancelButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CancelButton.swift; sourceTree = "<group>"; };
+		D97716641D7BF04800547FD4 /* Color.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Color.swift; sourceTree = "<group>"; };
 		D9DA7B011D7587F6008156BB /* LayerView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LayerView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -112,6 +114,7 @@
 		D96C26861D6C92F400298541 /* Sources */ = {
 			isa = PBXGroup;
 			children = (
+				D97716631D7BF03600547FD4 /* Color */,
 				D96C26A91D6DFE5800298541 /* Button */,
 				D96C26871D6C931200298541 /* Label */,
 				D9DA7B011D7587F6008156BB /* LayerView.swift */,
@@ -147,6 +150,14 @@
 				D96C26AA1D6DFE8400298541 /* CancelButton.swift */,
 			);
 			path = Button;
+			sourceTree = "<group>";
+		};
+		D97716631D7BF03600547FD4 /* Color */ = {
+			isa = PBXGroup;
+			children = (
+				D97716641D7BF04800547FD4 /* Color.swift */,
+			);
+			name = Color;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -269,6 +280,7 @@
 				D96C268B1D6C954200298541 /* HeaderLabel.swift in Sources */,
 				D96C26A81D6DFD2500298541 /* NormalLabel.swift in Sources */,
 				D9DA7B021D7587F6008156BB /* LayerView.swift in Sources */,
+				D97716651D7BF04800547FD4 /* Color.swift in Sources */,
 				D96C26AB1D6DFE8400298541 /* CancelButton.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
